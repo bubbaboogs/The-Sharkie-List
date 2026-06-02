@@ -100,6 +100,9 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
+                        Any submitted levels must be >60 seconds long, have >1000 objects, and cannot be a derivative of any other level (no buffed levels or other edits). Exceptions are "shplork" versions of levels.
+                    </p>
+                    <p>
                         Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
                     </p>
                     <p>
