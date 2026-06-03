@@ -1,12 +1,13 @@
 {
     "id": 40945673,
-    "name": "Crazy",
+    "name": "CraZy",
     "author": "DavJT",
     "creators": ["DavJT"],
     "verifier": "PeanutButterAJ",
     "verification": "https://youtu.be/LBxdlapd6xw",
     "percentToQualify": 80,
     "password": "Free to Copy",
+    "tier": 13,
     "records": [
     ]
 }

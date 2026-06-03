@@ -227,3 +227,25 @@ p::after,
     margin-top: -0.4416666667em;
     display: table;
 }
+
+
+.gddl-tier {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-font-smoothing: subpixel-antialiased;
+    color: white;
+}
+
+.square {
+    height: 50px;
+    width: 50px;
+    background-color: var(--tier-color);
+    border-radius: 10px;
+    border-color: color-mix(in srgb, var(--tier-color) 70%, white 30%);
+    border-width: 5px;
+    border-style: outset;
+    padding-top: 17px;
+}

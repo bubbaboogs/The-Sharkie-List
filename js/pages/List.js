@@ -14,6 +14,49 @@ const roleIconMap = {
     trial: "user-lock",
 };
 
+const tierColors = {
+    NaN: "#000000",
+    1: "#262a2b",
+    2: "#2b2e30",
+    3: "#2d3133",
+    4: "#313537",
+    5: "#33383a",
+    6: "#4a2353",
+    7: "#582459",
+    8: "#5f2455",
+    9: "#682451",
+    10: "#702249",
+    11: "#7b203f",
+    12: "#831f2f",
+    13: "#8d1d1d",
+    14: "#96221d",
+    15: "#9f271e",
+    16: "#a52c1e",
+    17: "#ae321e",
+    18: "#b0321c",
+    19: "#9a2e16",
+    20: "#8e2a11",
+    21: "#82260d",
+    22: "#7c220a",
+    23: "#762209",
+    24: "#6e1e06",
+    25: "#691e06",
+    26: "#5e1a04",
+    27: "#561803",
+    28: "#4d1502",
+    29: "#481302",
+    30: "#421200",
+    31: "#3f0801",
+    32: "#3b0206",
+    33: "#39020f",
+    34: "#350318",
+    35: "#33031f",
+    36: "#310526",
+    37: "#2d052a",
+    38: "#26052b",
+    39: "#1e0526"
+};
+
 export default {
     components: { Spinner, LevelAuthors },
     template: `
@@ -49,6 +92,12 @@ export default {
                         <li>
                             <div class="type-title-sm">ID</div>
                             <p>{{ level.id }}</p>
+                        </li>
+                        <li>
+                            <div class="type-title-sm">GDDL Tier</div>
+                            <div class="square" v-bind:style="{'--tier-color': tierColors[level.tier] || '#000000'}">
+                            <p class="gddl-tier">{{ level.tier }}</p>
+                            </div>
                         </li>
                         <li>
                             <div class="type-title-sm">Password</div>
@@ -137,7 +186,8 @@ export default {
         selected: 0,
         errors: [],
         roleIconMap,
-        store
+        store,
+        tierColors
     }),
     computed: {
         level() {
