@@ -9,5 +9,11 @@
     "password": "Free to Copy",
     "tier": 3,
     "records": [
+        {
+            "user": "bubbaboogs",
+            "link": "https://youtu.be/HKO7ckJQ4v8",
+            "percent": 100,
+            "hz": 240
+        }
     ]
 }
