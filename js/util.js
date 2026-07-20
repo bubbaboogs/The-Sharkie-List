@@ -6,9 +6,18 @@ export function getYoutubeIdFromUrl(url) {
 }
 
 export function embed(video) {
-    return `https://www.youtube.com/embed/${getYoutubeIdFromUrl(video)}`;
-}
+    if (/medal\.tv/.test(video)) {
+        return video.replace("/clips/", "/clip/");
+    }
 
+    const youtubeid = getYoutubeIdFromUrl(video);
+
+    if (youtubeid) {
+        return `https://www.youtube.com/embed/${youtubeid}`;
+    }
+
+    return null;
+}
 export function localize(num) {
     return num.toLocaleString(undefined, { minimumFractionDigits: 3 });
 }
