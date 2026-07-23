@@ -149,7 +149,7 @@ export default {
                     </template>
                     <h3>Submission Requirements</h3>
                     <p>
-                        Any submitted levels must be rated levels. Exceptions are "shplork" versions of levels.
+                        Any submitted levels must be rated levels. Exceptions are "shplork" versions of levels or levels specifically allowed by moderators.
                     </p>
                     <p>
                         Achieved the record without using hacks (however, FPS bypass is allowed, up to 360fps)
