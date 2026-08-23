@@ -54,7 +54,7 @@ export default {
                     <div class="player">
                         <h1>
                             #{{ selected + 1 }}
-                            <a href="#" @click="profileLink(entry.user)">
+                            <a href="javascript:void(0)" @click="profileLink(entry.user)">
                                 {{ entry.user }}
                             </a>
                         </h1>
