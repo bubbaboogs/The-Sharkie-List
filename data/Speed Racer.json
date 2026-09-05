@@ -7,13 +7,15 @@
     "verification": "https://youtu.be/ZG3c5oT_dDQ",
     "percentToQualify": 100,
     "password": "Free to Copy",
-    "tier": "2",
+    "tier": 2,
+    "enjoyment": 8.5,
     "records": [
         {
             "user": "bubbaboogs",
             "link": "https://youtu.be/dCGmCHNEDLQ",
             "percent": 100,
-            "hz": 240
+            "hz": 240,
+            "enjoyment": 7
         },
         {
             "user": "Kaese34",

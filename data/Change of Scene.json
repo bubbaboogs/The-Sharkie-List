@@ -8,12 +8,14 @@
     "percentToQualify": 72,
     "password": "Free to Copy",
     "tier": 3,
+    "enjoyment": 10,
     "records": [
         {
             "user": "bubbaboogs",
             "link": "https://youtu.be/HKO7ckJQ4v8",
             "percent": 100,
-            "hz": 240
+            "hz": 240,
+            "enjoyment": 7.5
         }
     ]
 }

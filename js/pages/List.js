@@ -103,6 +103,10 @@ export default {
                             <div class="type-title-sm">Password</div>
                             <p>{{ level.password || 'Free to Copy' }}</p>
                         </li>
+                        <li>
+                            <div class="type-title-sm">Enjoyment</div>
+                            <p>{{ get_average_enjoyment }}</p>
+                        </li>
                     </ul>
                     <h2>Records</h2>
                     <p v-if="selected + 1 <= 75"><strong>{{ level.percentToQualify }}%</strong> or better to qualify</p>
@@ -204,6 +208,20 @@ export default {
                     : this.level.verification
             );
         },
+        get_average_enjoyment() {
+            var enjoyments = [];
+            enjoyments.push(this.level.enjoyment);
+            this.level.records.forEach(element => {
+                if(element.enjoyment != null){
+                    enjoyments.push(element.enjoyment);
+                }
+            });
+            var total = 0
+            for(var i = 0; i< enjoyments.length; i++){
+                total += enjoyments[i];
+            }
+            return total / enjoyments.length;
+        }
     },
     async mounted() {
         // Hide loading spinner

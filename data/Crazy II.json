@@ -8,6 +8,14 @@
     "percentToQualify": 70,
     "password": "Free to Copy",
     "tier": 15,
+    "enjoyment": 9,
     "records": [
+        {
+            "user": "bubbaboogs",
+            "link": "",
+            "percent": 100,
+            "hz": 240,
+            "enjoyment": 9
+        }
     ]
 }
