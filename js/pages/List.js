@@ -220,7 +220,7 @@ export default {
             for(var i = 0; i< enjoyments.length; i++){
                 total += enjoyments[i];
             }
-            return total / enjoyments.length;
+            return (total / enjoyments.length).toFixed(2);
         }
     },
     async mounted() {

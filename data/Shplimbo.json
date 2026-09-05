@@ -16,6 +16,20 @@
             "percent": 100,
             "hz": 240,
             "enjoyment": 10
+        },
+        {
+            "user": "Kaese34",
+            "link": "",
+            "percent": 100,
+            "hz": 240,
+            "enjoyment": 7.5
+        },
+        {
+            "user": "PeanutbutterAJ",
+            "link": "",
+            "percent": 100,
+            "hz": 240,
+            "enjoyment": 10
         }
     ]
 }
